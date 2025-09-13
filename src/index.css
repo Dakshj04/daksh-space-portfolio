@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 20% 4%;
+    --foreground: 0 0% 95%;
+    --card: 240 15% 6%;
+    --card-foreground: 0 0% 90%;
+    --popover: 240 15% 6%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 100% 8%;
+    --secondary-foreground: 240 100% 85%;
+    --muted: 240 10% 12%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 15% 15%;
+    --input: 240 20% 18%;
+    --ring: 280 100% 70%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 25% 3%;
+    --foreground: 0 0% 98%;
+    --card: 240 20% 5%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 20% 5%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 100% 12%;
+    --secondary-foreground: 240 100% 90%;
+    --muted: 240 15% 10%;
+    --muted-foreground: 240 10% 70%;
+    --accent: 280 100% 75%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 20% 12%;
+    --input: 240 25% 15%;
+    --ring: 280 100% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  }
+}
